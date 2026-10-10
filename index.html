@@ -310,7 +310,7 @@
                 });
             });
 
-            localStorage.setItem('stickyNotesData', JSON.stringify(notes));
+            localStorage.setItem('StickySpace_Data', JSON.stringify(notes));
         }
 
         function applyColors(note, color) {
@@ -519,7 +519,7 @@
         }
 
         function loadNotes() {
-            const savedData = localStorage.getItem('stickyNotesData');
+            const savedData = localStorage.getItem('StickySpace_Data');
             
             if (savedData) {
                 const savedNotes = JSON.parse(savedData);
